@@ -22,6 +22,12 @@ for (let index = 0; index < users.length; index++) {
     cont++;
     edadPromedio = Math.round((sum/cont) * 10) / 10;
 }
+const mapaEdad = users.reduce((acc,users, i) => {
+  if (!acc[users.age]) {
+    acc[users.age] = [];
+  }
+  
+}, {});
 console.log(active);
 console.log(edadPromedio);
 
