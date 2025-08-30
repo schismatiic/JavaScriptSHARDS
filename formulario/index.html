@@ -39,9 +39,11 @@
                 <option value="3" class="formulario__option">Kinesiología</option>
                 <option value="4" class="formulario__option">Derecho</option>
             </select>
-
-            <label for="jornada1"><input type="radio" id="jornada1">Diurna</label>
-            <label for="jornada2"><input type="radio" id="jornada2">Vespertina</label>
+            <label for="select" class="formulario__label">Jornada</label>
+            <div class="jornadas">
+                <label for="jornada1"><input type="radio" id="jornada1">Diurna</label>
+                <label for="jornada2"><input type="radio" id="jornada2">Vespertina</label>
+            </div>
 
             <label for="select" class="formulario__label">Sede</label>
             <select name="select" id="select">
@@ -50,10 +52,12 @@
                 <option value="3" class="formulario__option">Chiloé</option>
             </select>
 
-            <label><input type="checkbox" required>Aceptar términos y condiciones</label>
+            <label class="checkbox"><input type="checkbox" required>Aceptar términos y condiciones</label>
 
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpiar">
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+            </div>
         </div>
     </form>
 </body>
