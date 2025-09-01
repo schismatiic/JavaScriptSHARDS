@@ -1,6 +1,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #ececec;
+  box-sizing: border-box;
 }
 .form-box {
   display: grid;
@@ -38,6 +39,10 @@ body {
   border-bottom: 2px solid red;
   background-color: #cfcfcf;
   padding: 5px;
+}
+.select-button {
+  width: 140px;
+  border: 1px solid black;
 }
 .jornadas {
   font-size: 12px;
@@ -78,8 +83,8 @@ body {
   cursor: pointer;
 }
 .boton-limpiar {
-  background-color: rgb(66, 66, 66);
-  color: rgb(187, 187, 187);
+  background-color: rgb(163, 163, 163);
+  color: rgb(29, 29, 29);
   font-size: 12px;
   padding: 6px 6px;
 }
