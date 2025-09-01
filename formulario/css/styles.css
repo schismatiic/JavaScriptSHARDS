@@ -25,6 +25,7 @@ body {
   padding: 10px 50px 50px 50px;
   box-shadow: 0 0 3px black;
   column-gap: 20px;
+  row-gap: 6px;
 }
 .formulario__label {
   margin: 5px 0;
@@ -40,27 +41,64 @@ body {
 }
 .jornadas {
   font-size: 12px;
+  display: flex;
+  justify-content: center;
+}
+.jornadas label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-column: 1 / -1;
   text-align: center;
   font-size: 12px;
 }
 .enviar {
+  display: grid;
   grid-column: 1 / -1;
   margin-top: 20px;
   text-align: center;
+  justify-items: center;
 }
 .boton {
   border: none;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: red;
   color: white;
-  padding: 6px;
+  padding: 6px 12px;
   margin: 4px;
   font-weight: bold;
   cursor: pointer;
 }
+.boton-limpiar {
+  background-color: rgb(66, 66, 66);
+  color: rgb(187, 187, 187);
+  font-size: 12px;
+  padding: 6px 6px;
+}
 .boton:hover {
   background-color: black;
   color: red;
+}
+.boton-limpiar:hover {
+  color: rgb(66, 66, 66);
+}
+.boton:active {
+  background-color: black;
+  color: red;
+  transform: scale(
+    0.95
+  ); /* Está genial este efecto :0 nunca lo había probado */
+}
+.boton-limpiar:active {
+  background-color: black;
+  color: rgb(66, 66, 66);
+  transform: scale(0.95);
 }
