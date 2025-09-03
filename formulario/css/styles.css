@@ -3,6 +3,9 @@ body {
   background-color: #ececec;
   box-sizing: border-box;
 }
+input:focus-visible {
+  outline: 1px solid red;
+}
 .form-box {
   display: grid;
   place-items: center;
