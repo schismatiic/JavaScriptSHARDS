@@ -10,19 +10,22 @@
 
 <body>
     <section>
-        <h2>Catálogo</h2>
-        <form id="form">
-            <input id="newName" placeholder="Nombre del producto">
-            <input id="newStock" type="number" placeholder="Stock inicial">
-            <button type="submit">Agregar</button>
-        </form>
+        <div class="box">
+            <h2>Catálogo</h2>
+            <form id="form">
+                <input id="newName" placeholder="Nombre del producto">
+                <input id="newStock" type="number" placeholder="Stock inicial">
+                <button type="submit">Agregar</button>
+            </form>
 
-        <label>
-            <input type="checkbox" id="onlyStock">
-            Mostrar solo con stock
-        </label>
+            <label>
+                <input type="checkbox" id="onlyStock">
+                Mostrar solo con stock
+            </label>
 
-        <div id="catalog"></div>
+            <div id="catalog"></div>
+        </div>
+
     </section>
     <script src="app.js"></script>
 </body>
